@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
         {
             Debug.Log("score increase!");
             other.gameObject.GetComponent<SFXPlayer>().PlaySFX();
-            // Destroy(other.gameObject);
+            Destroy(other.gameObject);
         }
         else
         if(other.gameObject.CompareTag("Obstacles"))
